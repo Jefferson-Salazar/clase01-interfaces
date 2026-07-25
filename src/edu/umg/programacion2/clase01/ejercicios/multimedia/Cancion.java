@@ -1,0 +1,28 @@
+package edu.umg.programacion2.clase01.ejercicios.multimedia;
+
+/**
+ * <p>
+ * Pista para reproducir(): imprime algo como
+ * "Reproduciendo canción: <titulo> (<duracionSegundos>s)".
+ * Pista para detener(): imprime algo como "Canción detenida: <titulo>".
+ */
+public class Cancion implements Reproducible {
+
+	private final String titulo;
+	private final int duracionSegundos;
+
+	public Cancion(String titulo, int duracionSegundos) {
+		this.titulo = titulo;
+		this.duracionSegundos = duracionSegundos;
+	}
+
+	@Override
+	public void reproducir() {
+		System.out.println("Reproduciendo canción: " + titulo + " (" + duracionSegundos + "s)");
+	}
+
+	@Override
+	public void detener() {
+		System.out.println("Canción detenida: " + titulo);
+	}
+}

@@ -1,7 +1,6 @@
 package edu.umg.programacion2.clase01.ejercicios.beneficios;
 
 /**
- * TODO (estudiante): completar calcularBono() según las reglas del enunciado.
  * <p>
  * Regla de negocio:
  * - Bono fijo de Q500, más Q100 adicionales por cada año de servicio.
@@ -22,8 +21,7 @@ public class Gerente implements Bonificable {
 
 	@Override
 	public double calcularBono(double salarioBase) {
-		// TODO: reemplazar esta línea por la fórmula correcta.
-		throw new UnsupportedOperationException("TODO: completar calcularBono() en Gerente");
+		return 500 + (100 * aniosServicio);
 	}
 
 	public String getNombre() {

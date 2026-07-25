@@ -1,7 +1,6 @@
 package edu.umg.programacion2.clase01.ejercicios.beneficios;
 
 /**
- * TODO (estudiante): completar calcularBono() según las reglas del enunciado.
  * <p>
  * Regla de negocio:
  * - Si numeroVentas es 10 o más -> el bono es 15% del salarioBase.
@@ -21,8 +20,11 @@ public class Vendedor implements Bonificable {
 
 	@Override
 	public double calcularBono(double salarioBase) {
-		// TODO: reemplazar esta línea por la fórmula correcta.
-		throw new UnsupportedOperationException("TODO: completar calcularBono() en Vendedor");
+		if (numeroVentas >= 10) {
+			return salarioBase * 0.15;
+		} else {
+			return salarioBase * 0.05;
+		}
 	}
 
 	public String getNombre() {
